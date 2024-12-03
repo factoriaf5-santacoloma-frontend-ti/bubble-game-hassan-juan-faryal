@@ -1,5 +1,5 @@
-import AFRAME from 'aframe';
-import 'aframe-extras';
+//import AFRAME from 'aframe';
+//import 'aframe-extras';
 
 window.addEventListener('load', initScene);
 
@@ -138,7 +138,7 @@ function generateCorals(scene, coralesData) {
             const coralEntity = document.createElement('a-entity');
             coralEntity.setAttribute('gltf-model', `#${coral.id}`);
             coralEntity.setAttribute('position', `${position.x} ${position.y} ${position.z}`);
-            coralEntity.setAttribute('scale', '2 2 2');
+            coralEntity.setAttribute('scale', '1.5 1.5 1.5');
             scene.appendChild(coralEntity);
         }
     });
